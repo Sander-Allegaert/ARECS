@@ -15,7 +15,7 @@ import itertools
 import numpy as np
 import sympy as sym
 import pandas as pd
-import FeatureExtraction as ft
+import FeatureExtraction_2021_06_13 as ft
 from scipy.integrate import odeint
 import matplotlib.pyplot as plt
 import warnings
@@ -58,7 +58,7 @@ def rate_construct(Species_total, Reaction_number, Stoich, Ads_dict, RDS, Single
 
     RDS: String
         The string represents the rate determining elementary step of the specific reaction.
-        Convention: SR_i = surface reaction i is RDS
+        Convention: SRi = surface reaction i is RDS
                     ADS_i = adsorption of reactant i is RDS
                     DES_i = desorption of product i is RDS
                     UNCAT = uncatalyzed reaction (1-step gas phase reaction)
